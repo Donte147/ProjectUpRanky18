@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #e2f8f7;
+    background: linear-gradient(180deg, rgba(226,248,247,1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+
+header {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    font-size: 20px;
+    color: #01b8b0 ;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #000;
+    font-weight: 800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-btn {
+    background-color: #01b8b0;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.contact-header {
+    max-width: 680px;
+    margin: 30px 0 20px 0;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.contact-header h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.contact-header p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #555;
+}
+
+.container {
+    width: 80%;
+    height: 400px;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    max-width: 350px;
+    height: 388px;
+    text-align: left;
+    color: #fff;
+    background-color: #01b8b0;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative; 
+    overflow: hidden;
+}
+
+.contact-info::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.217);
+    bottom: -40px;
+    right: -40px;
+}
+
+.contact-info h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #fbfefe;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-info p i {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #fbfefe;
+}
+
+.contact-info .info p {
+    margin: 2.8rem 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-form {
+    max-width: 650px;
+    width: 100%;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    border-bottom: 2px solid #868686;
+    margin-bottom: 20px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    border-color: #01b8b0;
+    resize: none;
+}
+
+.contact-form textarea::placeholder {
+    color: #555;
+    font-weight: 600;
+}
+
+.contact-form button {
+    background-color: #01b8b0;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 5rem;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 10px;
+    
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #01b8b0;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background: #e9f6f7;
+    border-radius: 50%;
+    text-decoration: none;
+}
