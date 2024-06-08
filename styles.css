@@ -28,10 +28,12 @@ header {
     padding: 1.5rem 6rem;
 }
 
+
 .logo {
     font-size: 20px;
     color: #01b8b0 ;
     font-weight: 800;
+   
 }
 
 .logo span {
@@ -39,13 +41,12 @@ header {
     font-weight: 800;
 }
 
-nav ul {
+ul {
     list-style: none;
     display: flex;
     gap: 50px;
 }
-
-nav ul li a {
+ ul li a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
@@ -236,4 +237,125 @@ footer {
     background: #e9f6f7;
     border-radius: 50%;
     text-decoration: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .8rem 1.2rem;
+    }
+    
+    
+    .logo {
+       font-size: 1rem;
+       order: -1;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        order: 2;
+    }
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        transition: all 0.3s ease;
+    }
+    nav ul li {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 1.3rem;
+        z-index: 1000;
+        opacity: 0;
+        transform: translateY(-10px);
+        box-shadow: 10px 1px 0 rgba(0, 0, 0, 0.1);
+        transition: all .3s ease;
+    }
+
+    .menu.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .container{
+        max-width: 380px;
+        height: auto;
+        margin-top: -5rem;
+    }
+
+    .contact-header h1 {
+        font-size: 22px;
+        margin-top: 1rem;
+    }
+
+    .contact-header p {
+        font-size: 16px;
+        padding: 0 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .contact-info{
+        /* border: 2px solid red; */
+        display: none;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+    .contact-form textarea{
+        height: 80px;
+    }
+    .input-group{
+        display: flex;
+        gap: 2rem;
+    }
+    footer{
+        /* border: 2px solid red; */
+        height: 40px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.8rem;
+    }
+    .footer-links{
+        display: flex;
+        gap: 10px;
+    }
+    
+    .footer-links a{
+        font-size: 14px;
+    }
+
+    .social-icons{
+        display: none;
+    }
+    footer .logo{
+        display: none;
+    }
 }

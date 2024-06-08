@@ -11,9 +11,19 @@
 <body>
     <!-- Here' the header section -->
     <header>
+
         <div class="logo">Up <span>Rankly</span></div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      
+    
+        
         <nav>
-            <ul>
+
+           <ul  class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
@@ -22,6 +32,7 @@
                 <li><a href="#" class="contact-btn">Contact</a></li>
             </ul>
         </nav>
+
     </header>
     
     <div class="contact-header">
@@ -86,5 +97,16 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
+
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const hamburger = document.querySelector('.hamburger')
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
